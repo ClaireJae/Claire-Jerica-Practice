@@ -33,3 +33,10 @@ h2 {
     font-family: Sometype Mono;
     color: rgb(73, 47, 28);
 }
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 300px;
+}
