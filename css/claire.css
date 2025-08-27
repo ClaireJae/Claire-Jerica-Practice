@@ -29,6 +29,42 @@ a:hover {
     background-color:rgba(255, 228, 225, 0.836);
 }
 
-h2 {
+h1, h2 {
     font-family: Sometype Mono;
+    color: rgb(73, 47, 28);
+}
+
+#miffy-gif {
+    width: 250px;
+    height: 250px;
+}
+
+#ImageDiv2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#cute-cat {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.progress-container {
+    width: 100%;
+    background: #eee;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: seagreen;
+    border-radius: 5px;
+    transition: width 0.3s ease;
 }
