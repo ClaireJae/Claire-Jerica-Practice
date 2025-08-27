@@ -34,9 +34,32 @@ h2 {
     color: rgb(73, 47, 28);
 }
 
-img {
+#ImgContainer {
+    padding: 1%;
+    margin: 0% 1% 0% 1%;
+    margin-top: 5%;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: pink 0px 0px 0px 2px, plum 0px 4px 6px -1px, palevioletred 0px 1px 0px inset;
+    background-color: rgba(233, 202, 199, 0.836);
+    padding: 1%;
+}
+
+#footerImages {
     border: 1px solid #ddd;
     border-radius: 50%;
     padding: 5px;
-    width: 300px;
+    width: 400px;
+    height: 500px;
+
+}
+
+#Andpersand {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10%;
 }
