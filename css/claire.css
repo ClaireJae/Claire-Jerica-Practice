@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
 
+/** Basic Page Styling **/
 body{
     background-color: mistyrose;
+}
+
+@keyframes example {
+    from {background-color: rosybrown;}
+    to {background-color: pink;}
 }
 
 nav {
@@ -13,6 +19,8 @@ nav {
     height: 50px;
     background-color: rosybrown;
     font-family: Sometype Mono;
+    animation-name: example;
+    animation-duration: 4s;
 }
 
 a {
@@ -35,6 +43,7 @@ h1, h2 {
     text-align: center;
 }
 
+/** Styling Ids & Classes **/
 #miffy-gif {
     width: 250px;
     height: 250px;

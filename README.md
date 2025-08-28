@@ -9,16 +9,16 @@ A creative website where we both experiment with different languages &amp; frame
 - Week 1
     - HTML/CSS basics
 - Week 2 
-    - HTML/CSS basics
+    - HTML/CSS intermediate
 - Week 3 
-    - HTML/CSS basics
+    - HTML/CSS slightly advanced
 - Week 4 
-    - Python
+    - Python basics
 - Week 5 
-    - JavaScript
+    - JavaScript basics
 - Week 6 
-    - TypeScript
+    - TypeScript basics
 - Week 7 
-    - Angular
+    - Angular basics
 - Week 8 
-    - React
+    - React basics
