@@ -25,7 +25,7 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: rgb(36, 11, 11);
     width: 100%;
     height: 50px;
     line-height: 50px;
@@ -104,4 +104,9 @@ h1, h2 {
 p, li {
     color: rgb(34, 21, 11);
     text-align: center;
+}
+
+a:hover {
+    color:rgb(127, 78, 148);
+    background-color:mintcream;
 }
