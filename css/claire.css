@@ -56,8 +56,8 @@ h1, h2 {
 }
 
 #cute-cat {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 200px;
     position: relative;
     display: block;
     float: right;
@@ -92,7 +92,6 @@ h1, h2 {
     border-color:rgb(156, 125, 85);
     background-color:rgb(252, 222, 227);
     padding: 50px;
-    justify-content: center;
 }
 
 #job-skills {
