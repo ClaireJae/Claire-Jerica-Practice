@@ -1,16 +1,20 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  gap: 8px; /* space between columns */
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
-  flex: 50%;
+  flex: 1 1 25%; /* 4 columns across (25% each) */
   padding: 0 4px;
 }
 
 .column img {
+  width: 100%;  /* fills the column width */
+  height: auto; /* keeps proportions */
   margin-top: 8px;
-  vertical-align: middle;
+  display: block; /* removes inline gaps */
+  border-radius: 6px; /* optional: rounded corners */
+  object-fit: cover; /* keeps image neat */
 }
