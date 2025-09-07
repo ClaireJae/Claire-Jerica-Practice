@@ -6,6 +6,27 @@
     <link rel="stylesheet" href="../css/claire.css">
     <link rel="shortcut icon" type="../image/ico" href="../claireImages/favicon.ico"/>
     <title>Claire's Page</title>
+    <style>
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .column img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    @media (max-width: 800px) {
+      .column { flex: 1 1 50%; }
+    }
+    @media (max-width: 500px) {
+      .column { flex: 1 1 100%; }
+    }
+  </style>
 </head>
 <body>
     <nav>
@@ -19,10 +40,6 @@
 
     <div id="ImageDiv1">
         <img id="miffy-gif" src="../claireImages/source.gif" alt="miffy-gif">
-    </div>
-
-    <div id="ImageDiv2">
-        <img id="cute-cat" src="../claireImages/colorful-cute-heart-cat-peeking-free-png.png" alt="cute-cat">
     </div>
 
     <section id="resume">
@@ -66,32 +83,23 @@
 
     <div class="row">
         <div class="column">
-            <img src="../claireImages/Screenshot_20250901_143850_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_143944_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144029_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144037_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144118_Gallery.jpg" style="width:500px;height:650px">
+            <img src="../claireImages/Screenshot_20250901_143850_Gallery.jpg">
+            <img src="../claireImages/Screenshot_20250901_144215_Gallery.jpg">
+            <img src="../claireImages/Screenshot_20250901_144201_Gallery.jpg">
+            <img src="../claireImages/Screenshot_20250901_144340_Gallery.jpg">
+            <img src="../claireImages/Screenshot_20250901_144453_Gallery.jpg">
         </div>
         <div class="column">
-            <img src="../claireImages/Screenshot_20250901_144152_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144201_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144215_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144233_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144317_Gallery.jpg" style="width:500px;height:650px">
+            <img src="../claireImages/Snapchat-1703822243.jpg">
+            <img src="../claireImages/Screenshot_20250901_145007_Gallery.jpg">
+            <img src="../claireImages/Snapchat-2139720504.jpg">
+            <img src="../claireImages/Snapchat-797618357.jpg">
         </div>
         <div class="column">
-            <img src="../claireImages/Screenshot_20250901_144324_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144329_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144340_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_144453_Gallery.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Screenshot_20250901_145007_Gallery.jpg" style="width:500px;height:650px">
-        </div>
-        <div class="column">
-            <img src="../claireImages/Snapchat-1703822243.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Snapchat-1776247751.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Snapchat-2139720504.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Snapchat-352267162.jpg" style="width:500px;height:650px">
-            <img src="../claireImages/Snapchat-767902948.jpg" style="width:500px;height:650px">
+            <img src="../claireImages/Screenshot_20250901_144324_Gallery.jpg">
+            <img src="../claireImages/Screenshot_20250901_144329_Gallery.jpg">
+            <img src="../claireImages/Snapchat-767902948.jpg">
+            <img src="../claireImages/Screenshot_20250901_144037_Gallery.jpg">
         </div>
     </div>
 

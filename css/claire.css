@@ -49,20 +49,6 @@ h1, h2 {
     height: 250px;
 }
 
-#ImageDiv2 {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-}
-
-#cute-cat {
-    width: 300px;
-    height: 200px;
-    position: relative;
-    display: block;
-    float: right;
-}
-
 .progress-container {
     width: 100%;
     background: #eee;
@@ -112,22 +98,25 @@ a:hover {
 
 /** Image Column **/
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* space between columns */
+  padding: 0 4px;
 }
 
 .column {
-    flex: 50%;
-    padding: 0 4px;
-    max-width: 500px;
-    max-height: 500px;
+  flex: 1 1 25%; /* 4 columns across (25% each) */
+  padding: 0 4px;
 }
 
 .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    /** object-fit: contain; **/
+  width: 100%;  /* fills the column width */
+  height: auto; /* keeps proportions */
+  margin-top: 8px;
+  display: block; /* removes inline gaps */
+  border-radius: 6px; /* optional: rounded corners */
+  object-fit: cover; /* keeps image neat */
+}
 
 /**
 .row {
