@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
 
-/** Basic Page Styling **/
+/* Basic Page Styling */
 body{
-    background-color: mistyrose;
+    background-color: rgb(250, 240, 240);
 }
 
 @keyframes example {
@@ -43,10 +43,10 @@ h1, h2 {
     text-align: center;
 }
 
-/** Styling Ids & Classes **/
+/* Styling Ids & Classes */
 #miffy-gif {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
 
 .progress-container {
@@ -65,7 +65,7 @@ h1, h2 {
     transition: width 0.3s ease;
 }
 
-/** Resume Section **/
+/* Resume Section */
 #resume {
     display: flex;
     margin-right: auto;
@@ -96,69 +96,29 @@ a:hover {
     background-color:mintcream;
 }
 
-/** Image Column **/
+/* Image Column */
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px; /* space between columns */
-  padding: 0 4px;
+  gap: 8px;
+  padding: 0 25px;
 }
 
 .column {
-  flex: 1 1 25%; /* 4 columns across (25% each) */
+  flex: 1 1 25%;
   padding: 0 4px;
 }
 
 .column img {
-  width: 100%;  /* fills the column width */
-  height: auto; /* keeps proportions */
+  width: 100%; 
+  height: auto; 
   margin-top: 8px;
-  display: block; /* removes inline gaps */
-  border-radius: 6px; /* optional: rounded corners */
-  object-fit: cover; /* keeps image neat */
-}
-
-/**
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    padding: 20px;
-    background-color: #fffafc;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.column img {
-    width: 280px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    transform: rotate(var(--rotate));
-    position: relative;
-    background-color: #fff;
-    border: 2px solid #fce4ec;
-}
-
-.column img:nth-child(odd) {
-    --rotate: -2deg;
-    margin-left: 10px;
-}
-
-.column img:nth-child(even) {
-    --rotate: 2deg;
-    margin-right: 10px;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
 }
 
 .column img:hover {
-    transform: rotate(0deg) scale(1.02);
-    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    transform: rotate(5deg);
+    /* transform: scale(1.1); */
 }
-**/
