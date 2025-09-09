@@ -4,7 +4,8 @@
 
 /* Basic Page Styling */
 body{
-    background-color: rgb(250, 240, 240);
+    background-image: url('https://i.pinimg.com/originals/43/2a/37/432a3783c9da69a99736c8bcdf60ce7c.jpg');
+    background-size: cover;
 }
 
 @keyframes example {
@@ -47,6 +48,56 @@ h1, h2 {
 #miffy-gif {
     width: 150px;
     height: 150px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#miffy-gif:hover {
+    transform: scale(1.1);
+}
+
+#textBubble {
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 155px;
+    border-top-left-radius: 155px;
+    border-bottom-right-radius: 155px;
+    padding: 20px;
+    width: 250px;
+    display: flex; 
+    font-size: medium;
+    border: solid rgb(85, 48, 65);
+}
+
+#textBubbleText {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+}
+
+button {
+    background-color: rgb(231, 164, 164);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-family: Sometype Mono;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+}
+
+button:hover {
+    background-color: rgb(228, 140, 154);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    cursor:url('https://www.rw-designer.com/cursor-view/226868.png'), auto;
 }
 
 .progress-container {
@@ -89,11 +140,6 @@ h1, h2 {
 p, li {
     color: rgb(34, 21, 11);
     text-align: center;
-}
-
-a:hover {
-    color:rgb(127, 78, 148);
-    background-color:mintcream;
 }
 
 /* Image Column */
