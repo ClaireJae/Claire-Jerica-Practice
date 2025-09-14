@@ -1,3 +1,36 @@
+
+/* Basic Page Styling */
+body{
+    background-image: url('https://i.pinimg.com/originals/43/2a/37/432a3783c9da69a99736c8bcdf60ce7c.jpg');
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rosybrown;
+    font-family: Sometype Mono;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 11, 11);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+}
+
 /** Image Column **/
 .row {
   display: flex;
