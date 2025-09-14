@@ -88,9 +88,10 @@ button {
     font-size: 25px;
     font-weight: bold;
     transition: all 0.2s ease;
-    position: absolute;
-    top: 12.5%;
-    left: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
 }
 
 button:hover {
