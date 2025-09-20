@@ -8,13 +8,40 @@
     <link rel="stylesheet" href="../css/jerica2.css">
 </head>
 <body>
+    <p>Here is the video I watched - https://www.youtube.com/watch?v=Uk1cTgQVP9g&t=635s</p>
     <div class="container">
         <div class="notes">
             <div id="create">
                 <i class="fa-solid fa-plus"></i>
+                    <div class="createBox">
+                        <div class="innerCreateBox">
+                            <textarea placeholder="Write Here ... " id="userInput" maxlength="160"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                <div class="note">ABCD</div>
             </div>
-            <div class="note">ABCD</div>
         </div>
     </div>
+    <script>
+       let createBox = document.getElementsByClassName('createBox');
+       [0];
+        let Notes = document.getElementsByClassName('notes')[0];
+        let input = document.getElementById('userInput');
+        let i = 0;
+
+        createBox.addEventListen('keydown', content);
+
+        document.getElementById("create").addEventListen("click",
+            function(){
+               createBox.style.display = "block"; 
+            });
+
+        function content(e){
+            if(e.keyCode == '13'){
+                createBox.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>

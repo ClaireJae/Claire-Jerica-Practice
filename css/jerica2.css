@@ -12,7 +12,7 @@
 }
 body{
  display: flex;
- background: #2f2f2f
+ background: darkgray
 }
 .container {
     position: relative;
@@ -39,12 +39,34 @@ body{
     height: var(--size);
     background-color: #f7e98d;
     padding: 20px;
+    box-shadow: 0, 15px, 35px, rgba(0,0,0,0);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container .notes .note::before
+{
+    content: "Double Click to Remove This Note";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0,0,0,0.15);
+    padding: 3px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85em;
+    opacity: 0;
+    transition: 0.5s;
+}
+.container .notes .note:hover::before
+{
+    opacity: 1;
 }
 #create {
     position: relative;
     width: var(--size);
     height: var(--size);
-    background: rgba(255, 255, 255, 255);
+    background: rgba(7, 255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,5 +75,26 @@ body{
 }
 #create i {
     position: absolute;
-    color: black;
+    color: white;
 }
+.createBox 
+{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    z-index: 1000;
+    display: none;
+}
+.createBox textarea 
+{
+    padding: absolute;
+    top: 0;
+    left: 0;
+    width: var(--size);
+    height: var(--size);
+    padding: 20px;
+    outline: none;
+    font-size: 0.2em;
+    resize: none;
+}
+
