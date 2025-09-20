@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerica's 2nd page | Sticky Notes </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/jerica2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerica's 2nd page | Sticky Notes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKcWYlK+au3E5r0X3Rjq0cwPdd9E+3gqJ5GdF2j5dEXJ6Yyp7lO9XwjJYb+8Yk0kPqw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/jerica2.css">
 </head>
 <body>
-    <div class="container">
-        <div class="notes">
-            <div id="create">
-                <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="note">ABCD</div>
+  <div class="container">
+    <div class="notes">
+      <div id="create">
+        <i class="fa-solid fa-plus"></i>
+        <div class="createBox">
+          <div class="innerCreateBox">
+            <textarea placeholder="Write Here...[Tab to paste sticky note]" id="userInput" maxlength="160"></textarea>
+          </div>
         </div>
+      </div>
+      <div class="note">Here is my example sticky notes</div>
     </div>
+  </div>
+
+  <script>
+    let createBox = document.getElementsByClassName('createBox')[0];
+    let Notes = document.getElementsByClassName('notes')[0];
+    let input = document.getElementById('userInput');
+
+    document.getElementById("create").addEventListener("click", function () {
+      createBox.style.display = "block";
+      input.focus();
+    });
+
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Tab") {
+        e.preventDefault();
+        let note = document.createElement("div");
+        note.className = "note";
+        note.textContent = input.value;
+        
+        note.addEventListener("dblclick", function () {
+          Notes.removeChild(note);
+        });
+
+        Notes.appendChild(note);
+        input.value = "";
+        createBox.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
