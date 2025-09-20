@@ -47,7 +47,7 @@ function divStyle(text){
     div.className = 'note';
     div.innerHTML = '<div class="details"><h3>' + text + '</h3></div>';
 
-    // remove note on double click anywhere inside the note
+    // remove note on double click
     div.addEventListener("dblclick", function(){
         div.remove();
     });
