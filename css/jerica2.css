@@ -40,7 +40,6 @@ body{
     background-color: #f7e98d;
     padding: 20px;
     box-shadow: 0, 15px, 35px, rgba(0,0,0,0);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .container .notes .note::before
 {
@@ -75,7 +74,7 @@ body{
 }
 #create i {
     position: absolute;
-    color: white;
+    color: #fff;
 }
 .createBox 
 {
@@ -97,4 +96,7 @@ body{
     font-size: 0.2em;
     resize: none;
 }
-
+.details h3
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
