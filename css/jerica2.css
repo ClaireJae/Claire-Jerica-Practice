@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --size: 300px;
+}
+body{
+ display: flex;
+ background: #2f2f2f
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 50px;
+}
+.container .notes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.container .notes .note
+{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background-color: #f7e98d;
+    padding: 20px;
+}
+#create {
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    background: rgba(255, 255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+    cursor: pointer;
+}
+#create i {
+    position: absolute;
+    color: black;
+}
