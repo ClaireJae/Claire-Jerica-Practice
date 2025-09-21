@@ -73,6 +73,7 @@ h1, h2 {
     display: flex;
     margin-top: 20px;
     padding: 20px;
+    /* This makes the images expand: */
     /* margin-left: 20%;
     margin-right: 20%; */
 }
@@ -98,7 +99,7 @@ button:hover {
     background-color: rgb(228, 140, 154);
     transform: translateY(-2px);
     box-shadow: 0 6px 8px rgba(0,0,0,0.15);
-    cursor:url('https://www.rw-designer.com/cursor-view/226868.png'), auto;
+    cursor: pointer;
 }
 
 #footer {

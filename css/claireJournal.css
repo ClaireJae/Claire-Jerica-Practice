@@ -14,7 +14,7 @@ nav {
     justify-content: center;
     height: 50px;
     color: #fff;
-    background-color: #b771f8;
+    background-color: #bf89f1;
     font-family: Sometype Mono;
     animation-name: example;
     animation-duration: 4s;
@@ -37,7 +37,7 @@ a:hover {
 .container {
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    background: linear-gradient(135deg, #cf9aff, #be7f94);
     color: #fff;
     padding-top: 4%;
     padding-left: 10%;
