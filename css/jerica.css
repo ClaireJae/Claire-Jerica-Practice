@@ -1,0 +1,65 @@
+
+/* Basic Page Styling */
+body{
+    background-image: url('https://i.pinimg.com/originals/43/2a/37/432a3783c9da69a99736c8bcdf60ce7c.jpg');
+    background-size: cover;
+}
+
+h1{
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+
+
+
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rosybrown;
+    font-family: Sometype Mono;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 11, 11);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+}
+
+/** Image Column **/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; /* space between columns */
+  padding: 0 4px;
+}
+
+.column {
+  flex: 1 1 20%; /* 4 columns across (25% each) */
+  padding: 0 4px;
+}
+
+.column img {
+  width: 100%;  /* fills the column width */
+  height: auto; /* keeps proportions */
+  margin-top: 8px;
+  display: block; /* removes inline gaps */
+  border-radius: 6px; /* optional: rounded corners */
+  object-fit: cover; /* keeps image neat */
+}

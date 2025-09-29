@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
+
+body{
+    background-color: mistyrose;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rosybrown;
+    font-family: Sometype Mono;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+a:hover {
+    color:saddlebrown;
+    background-color:rgba(255, 228, 225, 0.836);
+}
+
+h2 {
+    font-family: Sometype Mono;
+    color: rgb(73, 47, 28);
+    text-align: center;
+}
+
+#ImgContainer {
+    padding: 1%;
+    margin: 0% 1% 0% 1%;
+    margin-top: 5%;
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: pink 0px 0px 0px 2px, plum 0px 4px 6px -1px, palevioletred 0px 1px 0px inset;
+    background-color: rgba(233, 202, 199, 0.836);
+    padding: 1%;
+}
+
+#footerImages {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 400px;
+    height: 500px;
+
+}
+
+#Andpersand {
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 10%;
+}
+
+.details {
+    margin-top: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: Poppins;
+    font-size: 40px;
+    color: rgb(94, 42, 72);
+}

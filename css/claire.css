@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat&display=swap');
+
+/* Basic Page Styling */
+body{
+    background-image: url('https://i.pinimg.com/originals/43/2a/37/432a3783c9da69a99736c8bcdf60ce7c.jpg');
+    background-size: cover;
+}
+
+@keyframes example {
+    from {background-color: rosybrown;}
+    to {background-color: pink;}
+}
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 50px;
+    background-color: rosybrown;
+    font-family: Sometype Mono;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(36, 11, 11);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+a:hover {
+    color:saddlebrown;
+    background-color:rgba(255, 228, 225, 0.836);
+}
+
+h1, h2 {
+    font-family: Sometype Mono;
+    color: rgb(73, 47, 28);
+    text-align: center;
+}
+
+/* Styling Ids & Classes */
+#miffy-gif {
+    width: 150px;
+    height: 150px;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+#miffy-gif:hover {
+    transform: scale(1.1);
+}
+
+#textBubble {
+    text-align: center;
+    background-color: white;
+    border-top-right-radius: 155px;
+    border-top-left-radius: 155px;
+    border-bottom-right-radius: 155px;
+    padding: 20px;
+    width: 250px;
+    display: flex; 
+    font-size: medium;
+    border: solid rgb(85, 48, 65);
+}
+
+#textBubbleText {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    /* This makes the images expand: */
+    /* margin-left: 20%;
+    margin-right: 20%; */
+}
+
+button {
+    background-color: rgb(231, 164, 164);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    font-family: Sometype Mono;
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    font-size: 25px;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+}
+
+button:hover {
+    background-color: rgb(228, 140, 154);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid rgb(236, 88, 125) 2px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 1%;
+    margin: 0%;
+    background-color: rgb(252, 222, 227);
+    margin-top: 2%;
+}
+
+#QRCode {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10%;
+}
+
+/* Resume Section */
+#resume {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    max-width: 70%;
+    gap: 15px;
+    border-width: 2px;
+    border-style: solid;
+    border-color:rgb(156, 125, 85);
+    background-color:rgb(252, 222, 227);
+    padding: 50px;
+}
+
+#job-skills {
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+}
+
+p, li {
+    color: rgb(34, 21, 11);
+    text-align: center;
+}
+
+/* Image Column */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0 25px;
+}
+
+.column {
+  flex: 1 1 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  width: 100%; 
+  height: auto; 
+  margin-top: 8px;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.column img:hover {
+    transform: rotate(5deg);
+    /* transform: scale(1.1); */
+}
