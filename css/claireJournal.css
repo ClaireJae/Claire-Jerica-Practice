@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+@keyframes nav-ani {
+    from {background-color: #a16dd1}
+    to {background-color: rgb(238, 161, 174);}
+}
+
 nav {
     display: flex;
     align-content: center;
@@ -16,8 +21,11 @@ nav {
     color: #fff;
     background-color: #bf89f1;
     font-family: Sometype Mono;
-    animation-name: example;
-    animation-duration: 4s;
+    animation-name: nav-ani;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 a {
@@ -32,6 +40,7 @@ a {
 a:hover {
     background-color: #e0c7f8;
     color: #a448fa;
+    cursor: pointer;
 }
 
 .container {
