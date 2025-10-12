@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://thumb.ac-illust.com/2f/2f92abd238eeb7dc12d1a230546e76d8_t.jpeg');
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color: #3262a1;
+    border-width: 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #88b0d1;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(54, 42, 126, 0.644);
+    max-width: 900px;
+    width: 100%;
+    margin: 20px;
+}
+
+
+#pet-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+#pet-info img {
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+#pet-status {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#pet-status h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#pet-status p {
+    margin: 5px 0;
+}
+
+#pet-actions {
+    margin-top: 30px;
+}
+
+button {
+    background-color: #3262a1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a9c0d3;
+    color: #1d539b;
+}
