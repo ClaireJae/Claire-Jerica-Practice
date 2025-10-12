@@ -1,10 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
   background-color: white;
   margin: 0;
   padding: 20px;
   text-align: center;
   color: black;
+  .sofia-regular {
+  font-family: "Sofia", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 }
 
 nav {
@@ -17,6 +22,9 @@ nav a {
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
+  text-align: center;
+  text-shadow: 1em;
+
 }
 
 h1 {
@@ -40,6 +48,32 @@ img {
   width: 250px;
   height: auto;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
   margin: 15px 0;
+  text-decoration: underline;
 }
+
+
+div {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+  align-items: center;
+}
+
+div .sizebuttons {
+  width: auto;
+  height: auto;
+  border: 2px solid black;
+  padding: 10px;
+  align-items: center;
+}
+
+a:hover {
+  border: 2px solid black;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+
