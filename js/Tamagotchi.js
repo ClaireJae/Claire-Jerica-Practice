@@ -12,12 +12,23 @@ function updatePetStatus() {
     happiness = Math.max(0, Math.min(100, happiness));
 }
 
+function changeImageTemporarily(tempImage, duration = 4000) {
+    const petImage = document.getElementById("pet-image");
+    const originalImage = "../claireImages/pixel-cat.gif";
+
+    petImage.src = tempImage;
+    setTimeout(() => {
+        petImage.src = originalImage;
+    }, duration);
+}
+
+
 function feedPet() {
     if (hunger < 100) {
         hunger += 10;
         health += 5;
         happiness += 2;
-        alert("Pet has been fed! 🐾");
+        changeImageTemporarily("../claireImages/eatingKitty.gif");
     } else {
         alert("Already full!");
     }
@@ -28,7 +39,7 @@ function playWithPet() {
     if (happiness < 100) {
         happiness += 10;
         health += 5;
-        alert("You played with your pet! 🎾");
+        changeImageTemporarily("../claireImages/playingKitty.gif");
     } else {
         alert("Your pet is getting sleepy...");
     }
@@ -39,9 +50,20 @@ function TakeANap() {
     if (health < 100) {
         health += 15;
         hunger += 5;
-        alert("Zzzzzzzz");
+        changeImageTemporarily("../claireImages/sleepyCat.gif");
     } else {
         alert("Your pet is ready to play again!");
+    }
+    updatePetStatus();
+}
+
+function DressUp() {
+    if (health < 100) {
+        happiness += 20;
+        hunger += 5;
+        changeImageTemporarily("../claireImages/dressUpCat.gif");
+    } else {
+        alert("Pet is tired of dress up :(");
     }
     updatePetStatus();
 }

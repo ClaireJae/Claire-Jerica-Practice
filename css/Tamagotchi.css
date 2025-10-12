@@ -43,8 +43,8 @@ main {
 
 
 #pet-info img {
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 350px;
     border-radius: 10px;
     object-fit: cover;
 }
