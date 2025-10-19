@@ -22,6 +22,7 @@ body {
     border-width: 15px;
 }
 
+/** Tamagotchi area **/
 main {
     padding: 20px;
     background-color: #88b0d1;
@@ -32,7 +33,6 @@ main {
     margin: 20px;
 }
 
-
 #pet-info {
     display: flex;
     justify-content: center;
@@ -40,7 +40,6 @@ main {
     gap: 30px;
     margin-bottom: 40px;
 }
-
 
 #pet-info img {
     width: 400px;
@@ -83,3 +82,49 @@ button:hover {
     background-color: #a9c0d3;
     color: #1d539b;
 }
+
+/** Pet name area **/ 
+#name-container {
+    margin: 15px auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#pet-name-input {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #3262a1;
+    border-radius: 10px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#name-container button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #607097;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#name-container button:hover {
+    background-color: #88abda;
+}
+
+#pet-name-display {
+    text-align: center;
+    font-size: 22px;
+    color: #5b53b3;
+    margin-top: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#pet-name {
+    font-weight: bold;
+    color: #4136bc;
+}
+

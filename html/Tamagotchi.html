@@ -9,21 +9,22 @@
     <script src="../js/Tamagotchi.js" defer></script>
 </head>
 <body>
+    <div id="name-container">
+        <input type="text" id="pet-name-input" placeholder="Name your pet"/>
+        <button onclick="setPetName()">Set Name</button>
+    </div>
+
+    <h2 id="pet-name-display">Your pet's name: <span id="pet-name">Unnamed</span></h2>
+
     <main>
         <section id="pet-info">
             <img src="../claireImages/pixel-cat.gif" alt="Tamagotchi" id="pet-image">
-            <div id="pet-status">
-                <h2>Pet's Status</h2>
-                <p id="health">Health: <span>0</span>%</p>
-                <p id="hunger">Hunger: <span>0</span>%</p>
-                <p id="happiness">Happiness: <span>0</span>%</p>
-            </div>
         </section>
 
         <section id="pet-actions">
-            <button onclick="feedPet()">Feed</button>
             <button onclick="playWithPet()">Play</button>
             <button onclick="TakeANap()">Sleep</button>
+            <button onclick="feedPet()">Feed</button>
             <button onclick="DressUp()">Dress Up</button>
         </section>
     </main>

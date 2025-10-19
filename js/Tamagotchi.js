@@ -1,18 +1,29 @@
 let health = 0;
 let hunger = 0;
 let happiness = 0;
+let petName = "Unnamed";
+
+function setPetName() {
+    const nameInput = document.getElementById("pet-name-input");
+    const newName = nameInput.value.trim();
+
+    if (newName) {
+        petName = newName;
+        document.getElementById("pet-name").textContent = petName;
+        nameInput.value = "";
+        showActionMessage(`You named your pet ${petName}!`);
+    } else {
+        alert("Enter a valid name!");
+    }
+}
 
 function updatePetStatus() {
-    document.getElementById('health').innerHTML = `Health: <span>${health}</span>%`;
-    document.getElementById('hunger').innerHTML = `Hunger: <span>${hunger}</span>%`;
-    document.getElementById('happiness').innerHTML = `Happiness: <span>${happiness}</span>%`;
-
     health = Math.max(0, Math.min(100, health));
     hunger = Math.max(0, Math.min(100, hunger));
     happiness = Math.max(0, Math.min(100, happiness));
 }
 
-function changeImageTemporarily(tempImage, duration = 4000) {
+function changeImageTemporarily(tempImage, duration = 5000) {
     const petImage = document.getElementById("pet-image");
     const originalImage = "../claireImages/pixel-cat.gif";
 
@@ -22,7 +33,6 @@ function changeImageTemporarily(tempImage, duration = 4000) {
     }, duration);
 }
 
-
 function feedPet() {
     if (hunger < 100) {
         hunger += 10;
@@ -30,7 +40,7 @@ function feedPet() {
         happiness += 2;
         changeImageTemporarily("../claireImages/eatingKitty.gif");
     } else {
-        alert("Already full!");
+        alert(`${petName} is already full!`);
     }
     updatePetStatus();
 }
@@ -41,7 +51,7 @@ function playWithPet() {
         health += 5;
         changeImageTemporarily("../claireImages/playingKitty.gif");
     } else {
-        alert("Your pet is getting sleepy...");
+        alert(`${petName} is getting sleepy...`);
     }
     updatePetStatus();
 }
@@ -52,7 +62,7 @@ function TakeANap() {
         hunger += 5;
         changeImageTemporarily("../claireImages/sleepyCat.gif");
     } else {
-        alert("Your pet is ready to play again!");
+        alert(`${petName} is ready to play again!`);
     }
     updatePetStatus();
 }
@@ -63,7 +73,7 @@ function DressUp() {
         hunger += 5;
         changeImageTemporarily("../claireImages/dressUpCat.gif");
     } else {
-        alert("Pet is tired of dress up :(");
+        alert(`${petName} tired of dress up :(`);
     }
     updatePetStatus();
 }
