@@ -35,9 +35,8 @@ function changeImageTemporarily(tempImage, duration = 5000) {
 
 function feedPet() {
     if (hunger < 100) {
-        hunger += 10;
-        health += 5;
-        happiness += 2;
+        health += 25;
+        happiness += 25;
         changeImageTemporarily("../claireImages/eatingKitty.gif");
     } else {
         alert(`${petName} is already full!`);
@@ -47,8 +46,8 @@ function feedPet() {
 
 function playWithPet() {
     if (happiness < 100) {
-        happiness += 10;
-        health += 5;
+        happiness += 25;
+        hunger += 25;
         changeImageTemporarily("../claireImages/playingKitty.gif");
     } else {
         alert(`${petName} is getting sleepy...`);
@@ -58,8 +57,8 @@ function playWithPet() {
 
 function TakeANap() {
     if (health < 100) {
-        health += 15;
-        hunger += 5;
+        health += 25;
+        hunger += 25;
         changeImageTemporarily("../claireImages/sleepyCat.gif");
     } else {
         alert(`${petName} is ready to play again!`);
@@ -67,16 +66,16 @@ function TakeANap() {
     updatePetStatus();
 }
 
-function DressUp() {
-    if (health < 100) {
-        happiness += 20;
-        hunger += 5;
-        changeImageTemporarily("../claireImages/dressUpCat.gif");
-    } else {
-        alert(`${petName} tired of dress up :(`);
-    }
-    updatePetStatus();
-}
+// function DressUp() {
+//     if (health < 100) {
+//         happiness += 20;
+//         hunger += 5;
+//         changeImageTemporarily("../claireImages/dressUpCat.gif");
+//     } else {
+//         alert(`${petName} tired of dress up :(`);
+//     }
+//     updatePetStatus();
+// }
 
 function showActionMessage(message) {
     const statusDiv = document.getElementById("pet-status");
