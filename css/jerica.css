@@ -3,6 +3,7 @@ body {
     background-image: url('https://i.pinimg.com/originals/43/2a/37/432a3783c9da69a99736c8bcdf60ce7c.jpg');
     background-size: cover;
     font-family: 'Poppins', sans-serif;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66718)
 }
 
 h1, h2 {
@@ -23,6 +24,7 @@ nav {
     background-color: rosybrown;
     font-family: Sometype Mono;
 }
+
 
 a {
     text-decoration: none;
@@ -50,7 +52,7 @@ a:hover {
 .video-container iframe,
 .video-container img {
     width: 400px;
-    height: 400px;
+    height: 447px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -74,11 +76,6 @@ a:hover {
     align-items: center;
 }
 
-.column:first-child,
-.column:last-child {
-    justify-content: flex-end;
-}
-
 .column img {
     width: 100%;
     height: 450px;
@@ -86,3 +83,17 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+.heart {
+  position: fixed;
+  font-size: 24px;
+  animation: float 6s infinite;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
+}
+
